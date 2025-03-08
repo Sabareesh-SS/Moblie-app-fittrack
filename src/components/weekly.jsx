@@ -6,7 +6,7 @@ const Weekly = ({ isDarkMode }) => {
   const { weekly_prog } = Datas();
 
   return (
-    <View style={[styles.container, { backgroundColor: isDarkMode ? "#222" : "#ffffff" }]}>
+    <View style={[styles.container, { backgroundColor: isDarkMode ? "#000" : "#ffffff" }]}>
       <Text style={[styles.title, { color: isDarkMode ? "#fff" : "#000" }]}>Weekly Progress</Text>
       <View style={styles.listContainer}>
         {weekly_prog.map((item) => (
