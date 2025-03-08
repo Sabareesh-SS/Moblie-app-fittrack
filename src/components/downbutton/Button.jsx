@@ -1,5 +1,7 @@
 import React, { useState } from 'react';
-import { Button as RNButton, ActivityIndicator, Text, TouchableOpacity, View, StyleSheet } from 'react-native';
+import { Button as RNButton, ActivityIndicator, Text, TouchableOpacity, View} from 'react-native';
+import styles from './buttonsty';
+
 
 const WorkoutButton = ({ isDarkMode }) => {
   const [isLoading, setIsLoading] = useState(false); 
@@ -29,27 +31,6 @@ const WorkoutButton = ({ isDarkMode }) => {
   );
 };
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    justifyContent: 'center',
-    alignItems: 'center',
-  },
-  button: {
-    backgroundColor: 'rgb(79, 181, 78)', 
-    paddingVertical: 12,
-    width:380,
-    borderRadius: 10,
-    flexDirection: 'row', 
-    justifyContent: 'center',
-    alignItems: 'center',
-    marginBottom: 20,
-  },
-  buttonText: {
-    color: 'white',
-    fontSize: 18,
-    textAlign: 'center',
-  },
-});
+
 
 export default WorkoutButton;

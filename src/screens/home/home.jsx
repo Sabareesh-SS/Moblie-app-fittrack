@@ -1,13 +1,13 @@
 import React, {useState} from 'react';
 import {FlatList, ScrollView, StyleSheet} from 'react-native';
 import {SafeAreaProvider, SafeAreaView} from 'react-native-safe-area-context';
-import Weekly from '../components/weekly';
-import Header from '../components/header';
-import Today from '../components/Today';
-import Recent from '../components/Recent';
-import Plans from '../components/Plans';
-import Sleep from '../components/sleeptime';
-import Button from '../components/Button';
+import Weekly from '../../components/weekkly/weekly';
+import Header from '../../components/headder/header';
+import Today from '../../components/today/Today';
+import Recent from '../../components/recentworkout/Recent';
+import Plans from '../../components/workout plans/Plans';
+import Sleep from '../../components/sleeptime/sleeptime';
+import Button from '../../components/downbutton/Button';
 
 export default function Home() {
   const [isDarkMode, setIsDarkMode] = useState(false);

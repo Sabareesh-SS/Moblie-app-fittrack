@@ -1,6 +1,7 @@
 import React from 'react';
-import Datas from './Datas';
+import Datas from '../datas/Datas';
 import { StyleSheet, Text, View } from 'react-native';
+import styles from './weeklysty';
 
 const Weekly = ({ isDarkMode }) => {
   const { weekly_prog } = Datas();
@@ -27,30 +28,5 @@ const Weekly = ({ isDarkMode }) => {
     </View>
   );
 };
-
-const styles = StyleSheet.create({
-  container: {
-    padding: 20,
-    borderRadius: 20,
-    margin: 20,
-    elevation: 5,
-  },
-  title: {
-    fontWeight: "bold",
-    fontSize: 20,
-    marginBottom: 20,
-  },
-  listContainer: {
-    flexDirection: "row", 
-    justifyContent: "space-around",
-    alignItems: "center",
-  },
-  listItem: {
-    alignItems: "center",
-  },
-  day: {
-    fontSize: 16,
-  },
-});
 
 export default Weekly;

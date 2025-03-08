@@ -1,6 +1,7 @@
 import React from "react";
-import { Image, StyleSheet, Switch, Text, View } from "react-native";
+import { Image,  Switch, Text, View } from "react-native";
 import { SafeAreaView } from "react-native-safe-area-context";
+import styles from "./headersty"
 
 const Header = ({ isDarkMode, setIsDarkMode }) => {
   return (
@@ -26,28 +27,6 @@ const Header = ({ isDarkMode, setIsDarkMode }) => {
   );
 };
 
-const styles = StyleSheet.create({
-  container: {
-    height: 60,
-    flexDirection: "row",
-    justifyContent: "space-between",
-    alignItems: "center",
-    paddingHorizontal: 20,
-  },
-  innerContainer: {
-    flexDirection: "row",
-    alignItems: "center",
-  },
-  title: {
-    fontSize: 25,
-    fontWeight: "bold",
-  },
-  image: {
-    width: 40,
-    height: 40,
-    borderRadius: 20,
-    marginLeft: 10,
-  },
-});
+
 
 export default Header;
