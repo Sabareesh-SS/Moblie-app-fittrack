@@ -9,7 +9,7 @@ import {
   Button,
   Pressable,
 } from 'react-native';
-import Datas from '../../components/Datas';
+import Datas from './Datas';
 import {SafeAreaView} from 'react-native-safe-area-context';
 
 const Plans = ({isDarkMode}) => {

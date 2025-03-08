@@ -1,6 +1,6 @@
 import React from 'react';
 import { View, Text, Image, StyleSheet } from 'react-native';
-import AnimatedNumber from '../../components/Animation-time';
+import AnimatedNumber from './Animation-time';
 
 const Sleep = ({ isDarkMode }) => {
   return (

@@ -1,5 +1,5 @@
 import React from 'react';
-import Datas from './src/components/Datas';
+import Datas from './Datas';
 import { StyleSheet, Text, View } from 'react-native';
 
 const Weekly = ({ isDarkMode }) => {

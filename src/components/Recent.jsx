@@ -9,7 +9,7 @@ import {
   TouchableOpacity,
   View,
 } from 'react-native';
-import Datas from '../../components/Datas';
+import Datas from './Datas';
 
 const Recent = ({ isDarkMode }) => {
   const { recent } = Datas();
